@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/app/kuaipan/工作记录'
+let g:netrw_dirhist_2='/app/www/opencenter/Application/Product/Controller'
+let g:netrw_dirhist_3='/app/www/opencenter/Application/Product/Info'
