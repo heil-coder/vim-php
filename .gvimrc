@@ -42,10 +42,10 @@ au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn 
 set cursorline cursorcolumn
 
-ctrap  全局搜索
+"ctrap  全局搜索
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.jpeg,*.gif " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-ctrlp默认会使用grep进行搜索，效率低且慢。所以，我使用了ag去替换默认的搜索 功能。ag是一款轻量级的搜索工具，速度非常快。为了集成ag，需要添加下列配置： 
+"ctrlp默认会使用grep进行搜索，效率低且慢。所以，我使用了ag去替换默认的搜索 功能。ag是一款轻量级的搜索工具，速度非常快。为了集成ag，需要添加下列配置： 
 if executable('ag')
   " Use Ag over Grep
   set grepprg=ag\ --nogroup\ --nocolor
