@@ -21,11 +21,24 @@ set softtabstop=4
 " set expandtab                  "将tab替换为相应数量空格
 set smartindent
 
-
-
 set encoding=utf8               "设置内部编码为utf8
 set fileencoding=utf8            "当前编辑的文件编码
 set fileencodings=uft8-bom,utf8,gbk,gb2312,big5   "打开支持编码的文件
+set langmenu=zh_CN.UTF-8		"设置菜单语言以解决菜单无法正常显示的问题
+set imcmdline   
+source $VIMRUNTIME/delmenu.vim   
+source $VIMRUNTIME/menu.vim  
+
+"Toggle Menu and Toolbar   隐藏菜单
+set guioptions-=m  
+set guioptions-=T  
+map <silent> <F2> :if &guioptions =~# 'T' <Bar>  
+        \set guioptions-=T <Bar>  
+        \set guioptions-=m <bar>  
+    \else <Bar>  
+        \set guioptions+=T <Bar>  
+        \set guioptions+=m <Bar>  
+    \endif<CR>  
 
 filetype plugin on                                             
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
