@@ -24,7 +24,7 @@ set smartindent
 set encoding=utf8               "设置内部编码为utf8
 set fileencoding=utf8            "当前编辑的文件编码
 set fileencodings=uft8-bom,utf8,gbk,gb2312,big5   "打开支持编码的文件
-set langmenu=zh_CN.UTF-8		"设置菜单语言以解决菜单无法正常显示的问题
+set langmenu=zh_CN.UTF-8		"设置菜单语言以解决菜单无法正常显示的问题 在kali可能会影响输入法的快捷键,如果未设置时菜单显示正常不需要设置
 set imcmdline   
 source $VIMRUNTIME/delmenu.vim   
 source $VIMRUNTIME/menu.vim  
