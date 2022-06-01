@@ -16,6 +16,8 @@ set softtabstop=4
 " set expandtab                  "将tab替换为相应数量空格
 set smartindent
 
+set backupcopy=yes    "建一个新的备份副本（而不是重命名原始文件），然后它将覆盖原始的file,防止windows中文件名大小写被修改
+
 set encoding=utf8               "设置内部编码为utf8
 set fileencoding=utf8            "当前编辑的文件编码
 set fileencodings=uft8-bom,utf8,gbk,gb2312,big5   "打开支持编码的文件
